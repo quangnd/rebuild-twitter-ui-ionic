@@ -8,6 +8,6 @@ Learning UI design with Ionic grid 💪
 
 ## Note
 
-Best display on iPhone 6 (i'm still learing 😅)
+Best display on iPhone 6 (i'm still Learning 😅)
 
 
