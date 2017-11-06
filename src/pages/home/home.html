@@ -1,14 +1,203 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-row center>
+    <img src="assets/img/twitter-header.jpg" width="1000px" height="200px">
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3 class="profile-img-col">
+        <div class="profile-frame">
+          <img src="assets/img/profile-img.jpg" width="75px" height="75px" class="profile-img">
+        </div>
+      </ion-col>
+      <ion-col col-2></ion-col>
+      <ion-col col-7>
+        <button ion-button small icon-only clear color="dark">
+          <ion-icon name="cog"></ion-icon>
+        </button>
+        <button ion-button outline small icon-only color="dark">
+          <ion-icon name="people"></ion-icon>
+        </button>
+        <button ion-button outline small color="dark">Edit profile</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <span class="twitter-name">Jon Snow</span>
+        <br/>
+        <span class="grey-text">@jonsnow</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <p>
+          Developer with Angular, React, Ionic, C# and...Swift 💪. Go to my site at quangnd.com for details.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row padding-left>
+      <ion-col col-6>
+        <strong>555</strong>
+        <span class="grey-text tiny-size">FOLLOWING</span>
+      </ion-col>
+      <ion-col col-6>
+        <strong>1732</strong>
+        <span class="grey-text tiny-size">FOLLOWERS</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div padding>
+    <ion-segment [(ngModel)]="twitType" mode="ios">
+      <ion-segment-button value="tweet">
+        Tweet
+      </ion-segment-button>
+      <ion-segment-button value="photo">
+        Photo
+      </ion-segment-button>
+      <ion-segment-button value="favourites">
+        Favourites
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  <ion-list>
+    <ion-row>
+      <ion-col col-3>
+        <ion-avatar item-start>
+          <img src="assets/img/account1.jpg">
+        </ion-avatar>
+      </ion-col>
+      <ion-col col-9>
+        <ion-row>
+          <ion-col col-9 class="no-top-padding">
+            <span class="text-bold">Mun Mun</span>
+            <span class="grey-text tiny-size">@munmun</span>
+          </ion-col>
+          <ion-col col-3 class="mt-15sub">
+            <button ion-button icon-only clear small>
+              <ion-icon name="chatbubbles" color="dark"></ion-icon>
+              <span class="grey-text tiny-size">1/28</span>
+            </button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            From Mun with ❤️
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4 class="no-top-padding">
+            <button ion-button icon-only clear small>
+              <ion-icon name="share-alt"></ion-icon>
+              <span class="grey-text"></span>
+            </button>
+          </ion-col>
+          <ion-col col-4 class="no-top-padding">
+            <button ion-button icon-only clear small>
+              <ion-icon name="repeat"></ion-icon>
+              <span class="grey-text">123</span>
+            </button>
+          </ion-col>
+          <ion-col col-4 class="no-top-padding">
+            <button ion-button icon-only clear small>
+              <ion-icon name="star"></ion-icon>
+              <span class="grey-text">123</span>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-row>
+        <ion-col col-3>
+          <ion-avatar item-start>
+            <img src="assets/img/account2.jpg">
+          </ion-avatar>
+        </ion-col>
+        <ion-col col-9>
+          <ion-row>
+            <ion-col col-9 class="no-top-padding">
+              <span class="text-bold">Denzel washington</span>
+              <span class="grey-text tiny-size">@denzel</span>
+            </ion-col>
+            <ion-col col-3 class="mt-15sub">
+              <button ion-button icon-only clear small>
+                <ion-icon name="chatbubbles" color="dark"></ion-icon>
+                <span class="grey-text tiny-size">1/28</span>
+              </button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Put her on Equalizer? Watch out!
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-4 class="no-top-padding">
+              <button ion-button icon-only clear small>
+                <ion-icon name="share-alt"></ion-icon>
+                <span class="grey-text"></span>
+              </button>
+            </ion-col>
+            <ion-col col-4 class="no-top-padding">
+              <button ion-button icon-only clear small>
+                <ion-icon name="repeat"></ion-icon>
+                <span class="grey-text">123</span>
+              </button>
+            </ion-col>
+            <ion-col col-4 class="no-top-padding">
+              <button ion-button icon-only clear small>
+                <ion-icon name="star"></ion-icon>
+                <span class="grey-text">123</span>
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col col-3>
+            <ion-avatar item-start>
+              <img src="assets/img/profile-img.jpg">
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-9>
+            <ion-row>
+              <ion-col col-9 class="no-top-padding">
+                <span class="text-bold">John wick</span>
+                <span class="grey-text tiny-size">@johnwick</span>
+              </ion-col>
+              <ion-col col-3 class="mt-15sub">
+                <button ion-button icon-only clear small>
+                  <ion-icon name="chatbubbles" color="dark"></ion-icon>
+                  <span class="grey-text tiny-size">1/28</span>
+                </button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                Who killed my dog? I will find you 😤
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4 class="no-top-padding">
+                <button ion-button icon-only clear small>
+                  <ion-icon name="share-alt"></ion-icon>
+                  <span class="grey-text"></span>
+                </button>
+              </ion-col>
+              <ion-col col-4 class="no-top-padding">
+                <button ion-button icon-only clear small>
+                  <ion-icon name="repeat"></ion-icon>
+                  <span class="grey-text">123</span>
+                </button>
+              </ion-col>
+              <ion-col col-4 class="no-top-padding">
+                <button ion-button icon-only clear small>
+                  <ion-icon name="star"></ion-icon>
+                  <span class="grey-text">123</span>
+                </button>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+  </ion-list>
 </ion-content>

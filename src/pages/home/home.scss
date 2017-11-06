@@ -1,3 +1,36 @@
 page-home {
-
+    .profile-img-col {
+        margin-top: -50px;
+    }
+    .profile-frame {
+        background: #ffffff;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    .profile-img {
+        border-radius: 5px;
+    }
+    .grey-text {
+        color: #B9BEC5;
+    }
+    .twitter-name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .tiny-size {
+        font-size: 10px;
+    }
+    .mt-3 {
+        margin-top: 3px;
+        color: #000;
+    }
+    .mt-15sub {
+      margin-top: -15px;
+    }
+    .no-top-padding {
+        padding-top: 0px;
+    }
+    .text-bold {
+      font-weight: bold;
+    }
 }
